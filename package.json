@@ -1,6 +1,6 @@
 {
-  "name": "@xiangnanscu/tinymce",
-  "version": "0.6.0",
+  "name": "@xnscu/tinymce",
+  "version": "0.2.0",
   "description": "mirror package of tinymce production",
   "type": "module",
   "main": "tinymce.min.js",
