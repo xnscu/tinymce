@@ -3,6 +3,7 @@
 project=$PWD
 # 设置下载URL和目标文件名
 zip_file="tinymce.tgz"
+cp package.json package.json.bak
 
 cd /tmp
 # 下载zip文件
@@ -40,5 +41,6 @@ else
     echo "Copy failed."
     exit 1
 fi
-
+cd $project
+mv package.json.bak package.json
 echo "Operation completed."
