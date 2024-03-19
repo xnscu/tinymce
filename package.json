@@ -1,6 +1,6 @@
 {
   "name": "@xnscu/tinymce",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "mirror package of tinymce production",
   "type": "module",
   "main": "tinymce.js",
