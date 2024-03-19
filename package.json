@@ -3,7 +3,7 @@
   "version": "0.3.0",
   "description": "mirror package of tinymce production",
   "type": "module",
-  "main": "index.js",
+  "main": "tinymce.js",
   "types": "tinymce.d.ts",
   "engines": {
     "node": ">=v16.20.0"
