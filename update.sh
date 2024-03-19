@@ -2,12 +2,13 @@
 
 project=$PWD
 # 设置下载URL和目标文件名
-url="https://download.tiny.cloud/tinymce/community/tinymce_7.0.0.zip"
-zip_file="tinymce.zip"
+zip_file="tinymce.tgz"
 
 cd /tmp
 # 下载zip文件
-curl -o "$zip_file" "$url"
+npm pack tinymce
+mv tinymce-*.tgz $zip_file
+
 
 # 检查下载是否成功
 if [ $? -eq 0 ]; then
@@ -18,7 +19,8 @@ else
 fi
 
 # 解压到/tmp文件夹
-unzip -o "$zip_file" -d "/tmp"
+# unzip -o "$zip_file" -d "/tmp"
+tar -xzvf $zip_file
 
 # 检查解压是否成功
 if [ $? -eq 0 ]; then
@@ -29,7 +31,7 @@ else
 fi
 
 # 拷贝tinymce/js/tinymce到当前文件夹
-cp -r /tmp/tinymce/js/tinymce/* $project
+cp -r /tmp/package/* $project
 
 # 检查拷贝是否成功
 if [ $? -eq 0 ]; then
