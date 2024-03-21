@@ -1,0 +1,34 @@
+{
+  "name": "@xiangnanscu/tinymce",
+  "version": "0.2.0",
+  "description": "mirror package of tinymce production",
+  "type": "module",
+  "main": "tinymce.min.js",
+  "engines": {
+    "node": ">=v16.20.0"
+  },
+  "scripts": {
+    "prerc": "npm --no-git-tag-version version minor",
+    "rc": "yarn push",
+    "commit": "git add . && git commit -am ",
+    "c": "yarn commit",
+    "g": "yarn push",
+    "push": "yarn commit",
+    "_push": "git push --recurse-submodules=on-demand origin",
+    "_pull": "git pull --recurse-submodules origin master",
+    "postpush": "uname -s | grep -q Darwin && yarn _push || while true; do timeout 10 yarn _push && break; done",
+    "pull": "uname -s | grep -q Darwin && yarn _pull || while true; do timeout 10 yarn _pull && break; done"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiangnanscu/tinymce.git"
+  },
+  "keywords": [],
+  "author": "Nan Xiang <xnscu@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xiangnanscu/tinymce/issues"
+  },
+  "homepage": "https://github.com/xiangnanscu/tinymce#readme",
+  "devDependencies": {}
+}
