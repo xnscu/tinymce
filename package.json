@@ -1,6 +1,6 @@
 {
   "name": "@xiangnanscu/tinymce",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "mirror package of tinymce production",
   "type": "module",
   "main": "tinymce.min.js",
@@ -14,7 +14,7 @@
     "c": "yarn commit",
     "g": "yarn push",
     "push": "yarn commit",
-    "_push": "git push --recurse-submodules=on-demand origin",
+    "_push": "git push --set-upstream origin master",
     "_pull": "git pull --recurse-submodules origin master",
     "postpush": "uname -s | grep -q Darwin && yarn _push || while true; do timeout 10 yarn _push && break; done",
     "pull": "uname -s | grep -q Darwin && yarn _pull || while true; do timeout 10 yarn _pull && break; done"
