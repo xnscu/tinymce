@@ -56,14 +56,22 @@ import "./plugins/wordcount/index.js";
 /* import './plugins/powerpaste/plugin.js'; */
 /* import './plugins/powerpaste/js/wordimport.js'; */
 
-// /* content UI CSS is required */
+/* content UI CSS is required */
 import "./skins/ui/oxide/content.js";
 
-// /* The default content CSS can be changed or replaced with appropriate CSS for the editor content. */
+/* The default content CSS can be changed or replaced with appropriate CSS for the editor content. */
 import "./skins/content/default/content.js";
 
-// /* content UI CSS is required */
-// import contentUiSkinCss from "./skins/ui/oxide/content.js";
+// test
+import "./plugins/help/js/i18n/keynav/en.js";
+import "./plugins/help/js/i18n/keynav/zh_CN.js";
+import "./skins/content/default/content.css"
 
-// /* The default content CSS can be changed or replaced with appropriate CSS for the editor content. */
-// import contentCss from "./skins/content/default/content.js";
+// import "./skins/ui/oxide/content.css"
+import "./skins/ui/oxide/content.min.css"
+import "./skins/ui/oxide/content.inline.min.css"
+import "./skins/ui/oxide/skin.min.css"
+import "./skins/ui/oxide/skin.shadowdom.min.css"
+
+
+
