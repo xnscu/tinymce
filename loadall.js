@@ -65,13 +65,10 @@ import "./skins/content/default/content.js";
 // test
 import "./plugins/help/js/i18n/keynav/en.js";
 import "./plugins/help/js/i18n/keynav/zh_CN.js";
-import "./skins/content/default/content.css"
+// import "./skins/content/default/content.css" // this file contains global css population: body's margin
 
 // import "./skins/ui/oxide/content.css"
-import "./skins/ui/oxide/content.min.css"
-import "./skins/ui/oxide/content.inline.min.css"
-import "./skins/ui/oxide/skin.min.css"
-import "./skins/ui/oxide/skin.shadowdom.min.css"
-
-
-
+import "./skins/ui/oxide/content.min.css";
+import "./skins/ui/oxide/content.inline.min.css";
+import "./skins/ui/oxide/skin.min.css";
+import "./skins/ui/oxide/skin.shadowdom.min.css";
